@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      { "targets": { "browsers": ["last 2 versions", ">= 5% in KR"] } }
+    ],
+    "@babel/react"
+  ]
+}
+
+/*
+-- 발췌:https://velog.io/@do_dadu/React%EB%A5%BC-Webpack%EC%9C%BC%EB%A1%9C-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EA%B8%B0
+ babel(바벨)로 컴파일 할 때, targets을 지정해줬어요. 
+ 브라우저의 상위 버전 두개(예: IE 11, 10)와 한국(KR)에서 5% 이상의 점유율을 가지고 있는 브라우저에 대응하여 컴파일되도록 설정. 
+ 그리고 "@babel/react"을 통해 React(리액트)도 컴파일될 수 있도록 설정
+
+*/
