@@ -1,0 +1,31 @@
+._2Cz8d {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.u3Vce {
+  display: none;
+}
+._26cyn {
+  position: absolute;
+  left: -100000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+}
+._12BUU,
+._26cyn {
+  overflow: hidden;
+}
+@media (max-width: 768px) {
+  ._1gPMb {
+    display: none;
+  }
+  .u3Vce {
+    display: block;
+  }
+}
