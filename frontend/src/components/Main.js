@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-  overflow: "hidden";
-  display: "block";
+  overflow: hidden;
 `;
 
 function Main({ children, ...rest }) {
