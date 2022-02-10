@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Register() {
+function AuthRegister() {
   return <Link to="/users/showregister">가입</Link>;
 }
 
-export default Register;
+export default AuthRegister;

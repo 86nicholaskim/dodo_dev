@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Login from "components/Login";
-import Register from "components/Register";
+import AuthLogin from "components/AuthLogin";
+import AuthRegister from "components/AuthRegister";
 
 const StyledUl = styled.ul`
   margin: 0;
@@ -16,10 +16,10 @@ function Auths({ ...rest }) {
     <>
       <StyledUl {...rest}>
         <StyledLi {...rest}>
-          <Login />
+          <AuthLogin />
         </StyledLi>
         <StyledLi {...rest}>
-          <Register />
+          <AuthRegister />
         </StyledLi>
       </StyledUl>
     </>
