@@ -11,7 +11,7 @@ module.exports = (env) => {
     mode: "development",
 
     resolve: {
-      extensions: [".js", ".jsx"],
+      extensions: [".js", ".jsx", ".ts", ".tsx"],
       alias: {
         components: path.join(__dirname, "./src/components"),
         routes: path.join(__dirname, "./src/routes"),
@@ -20,7 +20,7 @@ module.exports = (env) => {
 
     // 번들 파일로 만들기 위한 시작 파일(entry)을 설정
     entry: {
-      index: "./src/index.js",
+      index: "./src/index.tsx",
     },
 
     //생성된 번들 파일(bundle)은 ./dist/ 폴더에 생성
@@ -38,6 +38,11 @@ module.exports = (env) => {
         {
           test: /\.(js|jsx)$/,
           use: ["babel-loader"],
+          exclude: /node_modules/,
+        },
+        {
+          test: /\.ts|tsx?$/,
+          use: "ts-loader",
           exclude: /node_modules/,
         },
         {
