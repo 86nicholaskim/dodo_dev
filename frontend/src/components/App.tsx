@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import DodoContainer from "../containers/DodoContainer";
 
-import Loading from "./Loading";
+import LoadingScreen from "./LoadingScreen";
 
 function App(): JSX.Element {
+  let [isloading, setState] = useState(true);
+
+  let timer = setTimeout(() => {
+    setState((prev) => false);
+  }, 5000);
+
   return (
     <>
-      <DodoContainer />
+      {isloading ? (
+        <LoadingScreen logoColor="#246fe0" ringThumbColor="#246fe0" />
+      ) : (
+        <DodoContainer />
+      )}
     </>
   );
 }

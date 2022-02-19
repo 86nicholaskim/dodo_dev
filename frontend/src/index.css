@@ -1,6 +1,39 @@
-*,
-:after,
-:before {
-  box-sizing: border-box;
+body,
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.4);
+  background-color: #fff;
+}
+
+body {
+  margin: auto auto auto 0;
+  color: #202020;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  font-smooth: always;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes circular-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes circular-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
 }
