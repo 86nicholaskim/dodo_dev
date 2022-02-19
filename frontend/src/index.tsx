@@ -5,13 +5,12 @@ import "./index.css";
 
 import AppContainer from "./containers/AppContainer";
 
-function App() {
+function Application() {
   return (
     <>
-      <h1>hihi</h1>
       <AppContainer />
     </>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<Application />, document.getElementById("app"));
