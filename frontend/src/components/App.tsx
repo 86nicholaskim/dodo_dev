@@ -1,24 +1,14 @@
 import React from "react";
 import DodoContainer from "../containers/DodoContainer";
-import MainPageRouter from "components/MainPageRouter";
 
-const App = (): JSX.Element => {
-  var isAuth = false;
-  if (confirm("로그인 후 dodo보기[확인] / 메인페이지보기 [취소]")) {
-    isAuth = true;
-  }
-  debugger;
+import Loading from "./Loading";
+
+function App(): JSX.Element {
   return (
     <>
-      {isAuth == false ? (
-        <>
-          <MainPageRouter />
-        </>
-      ) : (
-        <DodoContainer />
-      )}
+      <DodoContainer />
     </>
   );
-};
+}
 
 export default App;
