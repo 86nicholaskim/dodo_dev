@@ -3,7 +3,7 @@ import Header from "components/Header";
 import Navigator from "components/Navigator";
 
 import DodoistHomeIcon from "components/DodoistHomeIcon";
-import TopBar from "components/Topbar";
+import TopBar from "components/TopBar";
 import styled from "styled-components";
 
 const HeaderContainerDiv = styled.div`

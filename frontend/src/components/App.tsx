@@ -8,7 +8,7 @@ function App(): JSX.Element {
 
   let timer = setTimeout(() => {
     setState((prev) => false);
-  }, 5000);
+  }, 2000);
 
   return (
     <>
