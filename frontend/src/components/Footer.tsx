@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  margin: 0;
+  display: block;
 `;
 
 const Footer = (): JSX.Element => {

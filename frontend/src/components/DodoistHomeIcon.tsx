@@ -5,9 +5,13 @@ import { Link } from "react-router-dom";
 
 const Svg = styled(Icon)`
   height: 32px;
+  display: inline-flex;
+  color: var(--main-color);
+  margin-right: var(--space-16);
+  z-index: 12000;
 `;
 
-function Dodoist() {
+function DodoistHomeIcon() {
   return (
     <>
       <Link to="/">
@@ -34,4 +38,4 @@ function Dodoist() {
   );
 }
 
-export default Dodoist;
+export default DodoistHomeIcon;

@@ -25,13 +25,7 @@ function AppContainer() {
   return (
     <>
       <StyledAppContainer>
-        {isAuth == false ? (
-          <>
-            <MainPageRouter />
-          </>
-        ) : (
-          <App />
-        )}
+        {isAuth == false ? <MainPageRouter /> : <App />}
       </StyledAppContainer>
     </>
   );

@@ -4,11 +4,20 @@ import AuthLogin from "components/AuthLogin";
 import AuthRegister from "components/AuthRegister";
 
 const StyledUl = styled.ul`
-  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 `;
-
 const StyledLi = styled.li`
   margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 `;
 
 const Auths = ({ ...rest }): JSX.Element => {

@@ -1,10 +1,10 @@
 import React from "react";
-import Dodoist from "components/Dodoist";
+import DodoistHomeIcon from "components/DodoistHomeIcon";
 
 const Login = () => {
   return (
     <div>
-      <Dodoist />
+      <DodoistHomeIcon />
       <h1>Login</h1>
       <p>login page</p>
     </div>

@@ -1,24 +1,29 @@
 import React from "react";
 import Header from "components/Header";
 import Navigator from "components/Navigator";
-import AuthContainer from "./AuthContainer";
-import Introduce from "components/Introduce";
-import Dodoist from "components/Dodoist";
+
+import DodoistHomeIcon from "components/DodoistHomeIcon";
+import TopBar from "components/Topbar";
+import styled from "styled-components";
+
+const HeaderContainerDiv = styled.div`
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 11000;
+  position: fixed;
+`;
 
 function HeaderContainer() {
   return (
-    <div>
+    <HeaderContainerDiv>
       <Header>
         <Navigator>
-          <Dodoist />
-
-          <div>
-            <Introduce />
-            <AuthContainer />
-          </div>
+          <DodoistHomeIcon />
+          <TopBar />
         </Navigator>
       </Header>
-    </div>
+    </HeaderContainerDiv>
   );
 }
 

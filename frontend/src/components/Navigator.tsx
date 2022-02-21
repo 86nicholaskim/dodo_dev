@@ -2,7 +2,11 @@ import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 const StyledNavigator = styled.nav`
-  margin: 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex: 1 1;
+  min-height: var(--space-48);
 `;
 
 type Props = {};

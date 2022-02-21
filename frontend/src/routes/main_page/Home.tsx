@@ -2,11 +2,7 @@ import React from "react";
 import MainContainer from "../../containers/MainContainer";
 
 const Home = () => {
-  return (
-    <div>
-      <MainContainer />
-    </div>
-  );
+  return <MainContainer />;
 };
 
 export default Home;

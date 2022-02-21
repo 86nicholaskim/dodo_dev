@@ -2,7 +2,10 @@ import React, { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 const StyledHeader = styled.header`
-  margin: 0;
+  padding: 0 var(--space-16);
+  transition: background-color var(--duration-slow) var(--easing-smooth);
+  background-color: #fff;
+  height: var(--space-64);
 `;
 
 type Props = {
@@ -12,21 +15,7 @@ type Props = {
 //expression
 
 const Header: React.FC<Props> = ({ children }) => (
-  <StyledHeader>
-    {children}
-    Header
-  </StyledHeader>
+  <StyledHeader>{children}</StyledHeader>
 );
 
-/*
-//decration
-function Header({ children }: PropsWithChildren<Props>): React.ReactNode {
-  return (
-    <StyledHeader>
-      {children}
-      Header
-    </StyledHeader>
-  );
-}
-*/
 export default Header;

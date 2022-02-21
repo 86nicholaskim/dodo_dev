@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
 
-const StyledSections = styled.div`
-  margion: 0;
-`;
+const StyledSections = styled.div``;
 
 function Sections() {
   // dispatch 하기

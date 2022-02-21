@@ -1,18 +1,18 @@
 import React from "react";
 import Main from "components/Main";
-import Sections from "components/Sections";
+
 import HeaderContainer from "../containers/HeaderContainer";
+import SectionContainer from "../containers/SectionContainer";
 import Footer from "components/Footer";
+import styled from "styled-components";
 
 function MainContainer() {
   return (
-    <>
-      <Main>
-        <HeaderContainer />
-        <Sections />
-        <Footer />
-      </Main>
-    </>
+    <Main>
+      <HeaderContainer />
+      {/*<SectionContainer />*/}
+      <Footer />
+    </Main>
   );
 }
 

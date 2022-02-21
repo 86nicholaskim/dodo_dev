@@ -1,9 +1,39 @@
 import React from "react";
 import styled from "styled-components";
 
-const StyledOl = styled.ol``;
-const StyledUl = styled.ul``;
-const StyledLi = styled.li``;
+const StyledOl = styled.ol`
+  position: absolute;
+  left: calc(var(--space-8) * -1);
+  background-color: #fff;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-grey-04);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all var(--duration-slow) var(--easing-smooth);
+  transform: translateY(var(--space-4));
+  pointer-events: none;
+  max-height: calc(100vh - 5rem);
+  overflow: auto;
+  min-width: 350px;
+`;
+const StyledUl = styled.ul`
+  display: flex;
+  align-items: center;
+  height: 100%;
+`;
+const StyledLi = styled.li`
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+`;
 
 function Introduce() {
   return (
