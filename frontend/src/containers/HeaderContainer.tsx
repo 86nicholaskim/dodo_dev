@@ -19,7 +19,7 @@ function HeaderContainer() {
     <HeaderContainerDiv>
       <Header>
         <Navigator>
-          <DodoistHomeIcon />
+          <DodoistHomeIcon logoColor="#246fe0" fontColor="#246fe0" />
           <TopBar />
         </Navigator>
       </Header>
