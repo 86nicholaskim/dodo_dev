@@ -6,7 +6,11 @@ import DodoContainer from "../containers/DodoContainer";
 import MainPageRouter from "components/MainPageRouter";
 
 const StyledAppContainer = styled.div`
-  overflow: hidden;
+  font-family: var(--font-family-sans);
+  -webkit-margin-start: auto;
+  margin-inline-start: auto;
+  -webkit-margin-end: auto;
+  margin-inline-end: auto;
 `;
 
 function AppContainer() {
