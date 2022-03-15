@@ -2,6 +2,7 @@ import React, { PropsWithChildren } from 'react'
 import styled from 'styled-components'
 
 const StyledHeader = styled.header`
+    --main-color: var(--color-td-primary);
     padding: 0 var(--space-16);
     transition: background-color var(--duration-slow) var(--easing-smooth);
     background-color: #fff;

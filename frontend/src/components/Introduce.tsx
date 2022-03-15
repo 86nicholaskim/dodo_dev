@@ -40,6 +40,12 @@ const StyledLi = styled.li`
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    :hover {
+        text-decoration: none;
+        color: var(--color-grey-08);
+        background: var(--color-grey-01);
+        border-bottom: 2px solid var(--main-color);
+    }
 `
 
 const StyledLink = styled(Link)`
@@ -93,6 +99,15 @@ const StyledButton = styled.button`
     border-top: 2px solid transparent;
     border-bottom: 2px solid transparent;
     transition: var(--easing-smooth) var(--duration-fast);
+    :hover {
+        text-decoration: none;
+        color: var(--color-grey-08);
+        background: var(--color-grey-01);
+        border-bottom: 2px solid var(--main-color);
+        /* svg {
+            transform: translateY(2px);
+        } */
+    }
 `
 
 const StyledSpan1 = styled.span`

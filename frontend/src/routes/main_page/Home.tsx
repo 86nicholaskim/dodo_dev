@@ -1,8 +1,8 @@
-import React from "react";
-import MainContainer from "../../containers/MainContainer";
+import React from 'react'
+import MainContainer from '../../containers/MainContainer'
 
 const Home = () => {
-  return <MainContainer />;
-};
+    return <MainContainer />
+}
 
-export default Home;
+export default Home
