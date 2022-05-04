@@ -1,19 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Sections from "components/Sections";
-const StyledSectionContainerDiv = styled.section`
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  white-space: pre-line;
-`;
+import React from 'react'
+import styled from 'styled-components'
+import Sections from 'components/Sections'
+import IntroSection from 'components/IntroSection'
 
 function SectionContainer() {
-  return (
-    <StyledSectionContainerDiv>
-      <Sections />
-    </StyledSectionContainerDiv>
-  );
+    return (
+        <>
+            <IntroSection />
+            {/*<Sections />*/}
+        </>
+    )
 }
 
-export default SectionContainer;
+export default SectionContainer

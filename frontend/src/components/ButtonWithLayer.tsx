@@ -24,15 +24,6 @@ const StyledOl = styled.ol`
     min-width: 350px;
 `
 const StyledLi = styled.li`
-    --curr-line-height: var(--body-md-line-height);
-    --curr-letter-spacing: var(--body-md-letter-spacing);
-    --curr-font-weight: var(--body-md-font-weight);
-    --curr-text-transform: var(--body-md-text-transform);
-
-    line-height: var(--curr-line-height);
-    letter-spacing: var(--curr-letter-spacing);
-    font-weight: var(--curr-font-weight);
-    text-transform: var(--curr-text-transform);
     :hover {
         text-decoration: none;
         color: var(--color-grey-08);
@@ -44,11 +35,6 @@ const StyledLink = styled(Link)`
     display: flex;
     align-items: center;
     padding: var(--space-16) var(--space-24);
-
-    line-height: var(--curr-line-height);
-    letter-spacing: var(--curr-letter-spacing);
-    font-weight: var(--curr-font-weight);
-    text-transform: var(--curr-text-transform);
 
     :hover {
         text-decoration: none;
@@ -89,15 +75,7 @@ const StyledButton = styled.button`
     transition: var(--easing-smooth) var(--duration-fast);
 `
 const StyledSpan1 = styled.span`
-    margin-left: var(--space-8);
-
-    --curr-font-size: var(--body-md-font-size);
-    --curr-line-height: var(--body-md-line-height);
-    --curr-letter-spacing: var(--body-md-letter-spacing);
-    --curr-font-weight: var(--body-md-font-weight);
-    font-size: var(--curr-font-size);
-    line-height: var(--curr-line-height);
-    font-weight: var(--curr-font-weight);
+    font-size: 1rem;
     text-align: 'center';
 `
 const StyledSpan2 = styled.span`
