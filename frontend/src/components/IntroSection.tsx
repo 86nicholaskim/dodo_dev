@@ -14,8 +14,14 @@ const StyledLink = styled(Link)`
     --curr-letter-spacing: var(--heading-sm-letter-spacing);
     --curr-font-weight: var(--heading-sm-font-weight);
     --curr-text-transform: var(--heading-sm-text-transform);
+    font-size: var(--curr-font-size);
+    line-height: var(--curr-line-height);
+    letter-spacing: var(--curr-letter-spacing);
+    font-weight: var(--curr-font-weight);
+    text-transform: var(--curr-text-transform);
 
     margin-block-start: 2rem;
+
     padding: var(--space-8) var(--space-24);
     min-height: 2.75rem;
     border-radius: 0.625rem;
@@ -23,7 +29,7 @@ const StyledLink = styled(Link)`
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+
     border: 1px solid;
     overflow: visible;
     white-space: normal;
@@ -49,14 +55,14 @@ const StyledSection = styled.section`
     white-space: pre-line;
 `
 const StyledDiv = styled.div`
-    position: relative;
     text-align: center;
     white-space: pre-line;
 
     padding: var(--space-top-hero-section) var(--space-16) 0;
-    margin-block-end: -10rem;
+
     position: relative;
     margin-block-start: var(--space-48);
+    margin-block-end: -10rem;
 `
 
 const StyledH1 = styled.h1`
@@ -70,8 +76,9 @@ const StyledH1 = styled.h1`
     letter-spacing: var(--curr-letter-spacing);
     font-weight: var(--curr-font-weight);
     text-transform: var(--curr-text-transform);
-
     position: relative;
+    text-align: center;
+    white-space: pre-line;
 `
 const StyledImg = styled.img`
     inline-size: 90%;
@@ -84,7 +91,11 @@ function IntroSection() {
     return (
         <StyledSection>
             <StyledDiv>
-                <StyledH1>Dodoist와 함께 체계적으로 일하세요</StyledH1>
+                <StyledH1>
+                    Dodoist와 함께 <br />
+                    체계적으로 일하세요
+                </StyledH1>
+
                 <StyledLink to="">빠른 가이드</StyledLink>
             </StyledDiv>
             <StyledImg src={IntroImg} />
